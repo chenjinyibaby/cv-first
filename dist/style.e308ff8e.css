@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+div1::before {
+  box-sizing: border-box;
+}
+div1::after {
+  box-sizing: border-box;
+}
+#demo {
+  word-break: break-all; /*语句换行*/
+}
+#div1 {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+*::before {
+  content: "";
+  display: block;
+  position: absolute;
+}
+*::after {
+  content: "";
+  display: block;
+  position: absolute;
+}
+@media (max-width: 500px) {
+  #demo {
+    height: 50vh;
+    overflow: auto;
+  }
+  #div1Wrapper {
+    height: 50vh;
+  }
+
+  #div1 {
+    position: relative;
+    right: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
